@@ -7,7 +7,6 @@ grades[3] = sum(grades[3])/len(grades[3])
 grades[4] = sum(grades[4])/len(grades[4])
 students = list(students)
 students.sort()
-List ={students[0]: grades[0], students[1]: grades[1], students[2]: grades[2],
-        students[3]: grades[3], students[4]: grades[4]}
 str(grades)
-print(List)
+conclusion = dict(zip(students, grades))
+print(conclusion)
